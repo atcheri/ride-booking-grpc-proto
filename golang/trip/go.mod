@@ -1,4 +1,4 @@
-module github.com/atcheri/ride-booking-grpc-proto/trip
+module github.com/atcheri/ride-booking-grpc-proto/golang/trip
 
 go 1.25.3
 
