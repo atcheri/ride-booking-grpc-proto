@@ -239,7 +239,7 @@ func (x *Geometry) GetCoordinates() []*Coordinate {
 
 type Route struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Geometry      *Geometry              `protobuf:"bytes,1,opt,name=geometry,proto3" json:"geometry,omitempty"`
+	Geometry      []*Geometry            `protobuf:"bytes,1,rep,name=geometry,proto3" json:"geometry,omitempty"`
 	Distance      float64                `protobuf:"fixed64,2,opt,name=distance,proto3" json:"distance,omitempty"`
 	Duration      float64                `protobuf:"fixed64,3,opt,name=duration,proto3" json:"duration,omitempty"`
 	unknownFields protoimpl.UnknownFields
@@ -276,7 +276,7 @@ func (*Route) Descriptor() ([]byte, []int) {
 	return file_trip_trip_proto_rawDescGZIP(), []int{4}
 }
 
-func (x *Route) GetGeometry() *Geometry {
+func (x *Route) GetGeometry() []*Geometry {
 	if x != nil {
 		return x.Geometry
 	}
@@ -385,7 +385,7 @@ const file_trip_trip_proto_rawDesc = "" +
 	"\bGeometry\x12-\n" +
 	"\vcoordinates\x18\x01 \x03(\v2\v.CoordinateR\vcoordinates\"f\n" +
 	"\x05Route\x12%\n" +
-	"\bgeometry\x18\x01 \x01(\v2\t.GeometryR\bgeometry\x12\x1a\n" +
+	"\bgeometry\x18\x01 \x03(\v2\t.GeometryR\bgeometry\x12\x1a\n" +
 	"\bdistance\x18\x02 \x01(\x01R\bdistance\x12\x1a\n" +
 	"\bduration\x18\x03 \x01(\x01R\bduration\"\x82\x01\n" +
 	"\bRideFare\x12\x0e\n" +
