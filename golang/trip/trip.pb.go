@@ -495,9 +495,11 @@ const file_trip_trip_proto_rawDesc = "" +
 	"rideFareID\x12\x16\n" +
 	"\x06userID\x18\x02 \x01(\tR\x06userID\",\n" +
 	"\x12CreateTripResponse\x12\x16\n" +
-	"\x06tripID\x18\x01 \x01(\tR\x06tripID2G\n" +
+	"\x06tripID\x18\x01 \x01(\tR\x06tripID2~\n" +
 	"\vTripService\x128\n" +
-	"\vPreviewTrip\x12\x13.PreviewTripRequest\x1a\x14.PreviewTripResponseB6Z4github.com/atcheri/ride-booking-grpc-proto/trip;tripb\x06proto3"
+	"\vPreviewTrip\x12\x13.PreviewTripRequest\x1a\x14.PreviewTripResponse\x125\n" +
+	"\n" +
+	"CreateTrip\x12\x12.CreateTripRequest\x1a\x13.CreateTripResponseB6Z4github.com/atcheri/ride-booking-grpc-proto/trip;tripb\x06proto3"
 
 var (
 	file_trip_trip_proto_rawDescOnce sync.Once
@@ -530,9 +532,11 @@ var file_trip_trip_proto_depIdxs = []int32{
 	2, // 4: Geometry.coordinates:type_name -> Coordinate
 	3, // 5: Route.geometry:type_name -> Geometry
 	0, // 6: TripService.PreviewTrip:input_type -> PreviewTripRequest
-	1, // 7: TripService.PreviewTrip:output_type -> PreviewTripResponse
-	7, // [7:8] is the sub-list for method output_type
-	6, // [6:7] is the sub-list for method input_type
+	6, // 7: TripService.CreateTrip:input_type -> CreateTripRequest
+	1, // 8: TripService.PreviewTrip:output_type -> PreviewTripResponse
+	7, // 9: TripService.CreateTrip:output_type -> CreateTripResponse
+	8, // [8:10] is the sub-list for method output_type
+	6, // [6:8] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name
 	6, // [6:6] is the sub-list for extension extendee
 	0, // [0:6] is the sub-list for field type_name
