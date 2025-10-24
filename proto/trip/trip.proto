@@ -58,10 +58,10 @@ message Trip {
     Route route =3;
     string status = 4;
     string userID = 5;
-    Driver driver = 6;
+    TripDriver driver = 6;
 }
 
-message Driver {
+message TripDriver {
     string id = 1;
     string name = 2;
     string profilePicture = 3;
