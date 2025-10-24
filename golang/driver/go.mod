@@ -1,4 +1,4 @@
-module github.com/atcheri/ride-booking-grpc-proto/driver
+module github.com/atcheri/ride-booking-grpc-proto/golang/driver
 
 go 1.25.3
 
